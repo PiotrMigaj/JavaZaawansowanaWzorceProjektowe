@@ -1,4 +1,4 @@
-package pl.migibud.wzorceprojektowe.zadania.strategy;
+package pl.migibud.wzorceprojektowe.zadania.strategy.ex1;
 
 public class Subtraction implements Strategy {
     @Override

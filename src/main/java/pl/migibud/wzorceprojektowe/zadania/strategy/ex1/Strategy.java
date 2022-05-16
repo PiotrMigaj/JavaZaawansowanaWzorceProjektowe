@@ -1,4 +1,4 @@
-package pl.migibud.wzorceprojektowe.zadania.strategy;
+package pl.migibud.wzorceprojektowe.zadania.strategy.ex1;
 
 @FunctionalInterface
 public interface Strategy {
