@@ -1,5 +1,7 @@
 package pl.migibud.wzorceprojektowe.zadania.factory.ex2.units;
 
-public abstract class Factory {
-    public abstract Unit createUnit(UnitType unitType);
+public interface Factory {
+    InfantryUnit createInfantryUnit(UnitType unitType);
+    MechanizedUnit createMechanizedUnit(UnitType unitType);
+    AirUnit createAirUnit(UnitType unitType);
 }

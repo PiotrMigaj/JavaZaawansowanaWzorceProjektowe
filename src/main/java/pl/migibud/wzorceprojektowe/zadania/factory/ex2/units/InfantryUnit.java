@@ -6,11 +6,8 @@ import lombok.Getter;
 
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public abstract class Unit {
-
+public abstract class InfantryUnit {
     private int hp;
     private int exp;
     private int dmgDone;
-
-
 }
