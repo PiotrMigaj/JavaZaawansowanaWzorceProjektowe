@@ -5,7 +5,7 @@ public class Main {
 
         long start, stop;
         start = System.currentTimeMillis();
-        double result = MigiMath.rectangleIntegrate(x->x*x,0,3);
+        double result = MigiMath.integrate(new SimpsonSingleInterval(),0,3,x->x*x);
         stop = System.currentTimeMillis();
 
         System.out.println(result);
@@ -13,11 +13,17 @@ public class Main {
 
         System.out.println();
 
-        start = System.currentTimeMillis();
-        result = MigiMath.multiThreadRectangleIntegrate(x->x*x,0,3);
-        stop = System.currentTimeMillis();
+        Integration integration = new SimpsonSingleInterval();
+        double result2 = integration.integrate(x->x*x,0,3);
+        System.out.println(result2);
 
-        System.out.println(result);
-        System.out.println(stop-start);
+
+//
+//        start = System.currentTimeMillis();
+//        result = MigiMath.multiThreadRectangleIntegrate(x->x*x,0,3);
+//        stop = System.currentTimeMillis();
+//
+//        System.out.println(result);
+//        System.out.println(stop-start);
     }
 }
